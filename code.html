@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/jeromeetienne/AR.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+      <!-- Image Marker -->
+      <a-marker type="pattern" url="marker.patt">
+        <!-- AR Content (3D Object) -->
+        <a-box position="0 0.5 0" material="color: red;"></a-box>
+      </a-marker>
+      <a-entity 
+      gltf-model="https://drive.google.com/uc?export=download&id=1viAHwAgj3g6A6Vnog-yzPE4pEVGuKbVc" 
+      scale="0.2 0.2 0.2"
+      position="0 0 0"
+      rotation="0 0 0">
+      </a-entity>
+
+      <!-- <a-entity camera></a-entity> -->
+    </a-scene>
+  </body>
+</html>
